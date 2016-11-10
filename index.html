@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>智慧书房</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="dist/css/bootstrap.css">
+  <link rel="stylesheet" href="dist/js/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div id="fullpage">
+    <div class="section sectionOne relative">
+      <img src="imgs/yunda.png" class="cloudBig absolute">
+      <img src="imgs/yunzhong.png" class="cloudMiddle absolute">
+      <img src="imgs/yunxiao.png" class="cloudSmall absolute">
+      <img src="imgs/shanpo.png" class="shanpo absolute">
+      <div class="sectionOneText text-center marginCenter">
+        <p class="sectionOneTitle">收藏经典</p>
+        <p class="appVersion">智慧书房V1.0</p>
+        <div class="row codeQR">
+          <div class="col-xs-6 col-sm-6 col-md-6 iPhoneQR">
+            <img src="imgs/erweima.png" class="iPhoneQRImg">
+            <img src="imgs/iphone.png" class="iPhoneDownload marginCenter">
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 androidQR">
+            <img src="imgs/erweima.png" class="androidQRImg">
+            <img src="imgs/android.png" class="androidDownload marginCenter">
+          </div>
+        </div>
+        <p class="sectionOneSubhead">你离成功就差一个精英书架</p>
+      </div>
+    </div>
+    <div class="section sectionTwo marginCenter">
+      <div class="sectionTwoText sectionText pull-left">
+        <div class="sectionTitle">
+          <span>多读</span>好书
+        </div>
+        <p class="sectionSubhead">腹有诗书气自华，遇见更好的自己</p>
+      </div>
+      <div class="sectionImg pull-left text-right">
+        <img src="imgs/duodushu.png" class="img-responsive">
+      </div>
+    </div>
+    <div class="section sectionThree marginCenter">
+      <div class="sectionImg pull-left text-left">
+        <img src="imgs/near.png" class="img-responsive">
+      </div>
+      <div class="sectionThreeText sectionText pull-left">
+        <div class="sectionTitle">
+          <span>晒出</span>书房
+        </div>
+        <p class="sectionSubhead">一键与附近的好友分享</p>
+      </div>
+    </div>
+    <div class="section sectionFour marginCenter">
+      <div class="sectionFourText sectionText pull-left">
+        <div class="sectionTitle">
+          <span>智慧</span>书房
+        </div>
+        <p class="sectionSubhead">推荐你最值得读的书</p>
+      </div>
+      <div class="sectionImg pull-left text-right">
+        <img src="imgs/zhihuishufang.png" class="img-responsive">
+      </div>
+    </div>
+    <div class="section sectionFive marginCenter">
+      <div class="sectionImg pull-left text-left">
+        <img src="imgs/xianxiashushe.png" class="img-responsive">
+      </div>
+      <div class="sectionFiveText sectionText pull-left">
+        <div class="sectionTitle">
+          <span>线下</span>书社
+        </div>
+        <p class="sectionSubhead">沟通想法，同读好书，邂逅自己</p>
+      </div>
+    </div>
+    <div class="section sectionSix marginCenter">
+      <div class="sectionSixText sectionText pull-left">
+        <div class="sectionTitle">
+          <span>共享</span>书架
+        </div>
+        <p class="sectionSubhead">我们一起共享社区大书房</p>
+        <button class="download">立即下载</button>
+      </div>
+      <div class="sectionImg pull-left text-right">
+        <img src="imgs/gongxiangshujia.png" class="img-responsive">
+      </div>
+    </div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="dist/js/jquery-1.11.3.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="dist/js/bootstrap.min.js"></script>
+  <script src="dist/js/jquery.fullpage.min.js"></script>
+  <script>
+  $(function() {
+    $('#fullpage').fullpage();
+  });
+  </script>
+</body>
+
+</html>
