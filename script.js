@@ -1,23 +1,22 @@
 $(function() {
-  var test = document.getElementsByTagName("body")[0].style;
-  if (typeof test.animation != "undefined" || typeof test.WebkitAnimation != "undefined") {
-    alert("浏览器支持CSS3动画！");
-  } else {
-    alert("浏览器不支持CSS3动画！");
-  }
   $('#fullpage').fullpage({
     loopBottom: true,
-    scrollingSpeed: 600,
-    anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+    css3: true,
     afterLoad: function(anchorLink, index) {
-      $('.section').eq(index - 1).find('.sectionText').addClass('textAnimate');
-      $('.section').eq(index - 1).find('.sectionImg').addClass('imgAnimate');
-      $('.section').eq(index - 1).find('.keywords').addClass('keywordsAnimate');
+      goAnimation('sectionText',index);
+      goAnimation('sectionImg',index);
+      goAnimation('keywords',index);
     },
     onLeave: function(anchorLink, index) {
-      $('.section').eq(index - 1).find('.sectionText').removeClass('textAnimate');
-      $('.section').eq(index - 1).find('.sectionImg').removeClass('imgAnimate');
-      $('.section').eq(index - 1).find('.keywords').removeClass('keywordsAnimate');
+      backAnimation('sectionText',index);
+      backAnimation('sectionImg',index);
+      backAnimation('keywords',index);
     }
   });
+  function goAnimation(ele,index){
+  	$('.'+ele).eq(index-2).addClass(ele+'Animate');
+  }
+  function backAnimation(ele,index){
+  	$('.'+ele).eq(index-2).removeClass(ele+'Animate');
+  }
 });
