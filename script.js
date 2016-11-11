@@ -1,5 +1,5 @@
 $(function() {
-	alert($('body').width());
+	// alert($('body').width());
   $('#fullpage').fullpage({
     loopBottom: true,
     scrollingSpeed: 600,
