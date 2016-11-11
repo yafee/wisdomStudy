@@ -2,9 +2,11 @@
 * @Author: yafee
 * @Date:   2016-11-09 14:24:13
 * @Last Modified by:   yafee
-* @Last Modified time: 2016-11-11 15:55:22
+* @Last Modified time: 2016-11-11 17:43:52
 */
-
+*{
+	transform:translate3d(0);
+}
 html,
 body,
 div,
@@ -25,12 +27,7 @@ img {
 .absolute {
   position: absolute;
 }
-.opacity1{
-	-webkit-filter: alpha(100);
-	-o-filter: alpha(100);
-	filter: alpha(100);
-	opacity: 1;
-}
+
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Microsoft Yahei', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti, SimSun;
   background: #fefefe;
@@ -109,7 +106,7 @@ body {
   font-size: 2.4rem;
 }
 
-.sectionOne .download,
+.mobileDownload,
 .slideMore,
 .slideDown {
   display: none;
@@ -224,11 +221,12 @@ body {
   .sectionSix .doanload {
     display: none;
   }
-  .sectionOne .download {
+  .mobileDownload {
     display: block;
     background: #fefefe;
     color: #f5a253;
     border: 1px solid #f5a253;
+    border-radius: 1.5rem;
     height: 3rem;
     line-height: 3rem;
     width: 18rem;
@@ -375,7 +373,7 @@ body {
   position: relative;
 }
 
-.download {
+.pcDownload {
   position: absolute;
   right: 8rem;
   bottom: -1rem;
@@ -389,7 +387,7 @@ body {
   color: #fff;
 }
 
-button.download:focus {
+button.pcDownload:focus {
   outline: none;
 }
 
@@ -450,7 +448,7 @@ button.download:focus {
     -o-transform: translateX(1.5rem);
     transform: translateX(1.5rem);
   }
-  .download {
+  .pcDownload {
     position: static;
     margin-top: 2rem;
   }
