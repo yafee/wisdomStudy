@@ -1,4 +1,5 @@
 $(function() {
+	alert($('body').width());
   $('#fullpage').fullpage({
     loopBottom: true,
     scrollingSpeed: 600,
