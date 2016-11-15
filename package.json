@@ -1,0 +1,34 @@
+{
+  "name": "wisdom",
+  "version": "1.0.0",
+  "description": "智慧书房",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yafee/wisdomStudy.git"
+  },
+  "keywords": [
+    "智慧书房"
+  ],
+  "author": "ya_fee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yafee/wisdomStudy/issues"
+  },
+  "homepage": "https://github.com/yafee/wisdomStudy#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "jshint": "^2.9.4"
+  }
+}
