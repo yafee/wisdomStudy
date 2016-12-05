@@ -2,11 +2,13 @@
 * @Author: yafee
 * @Date:   2016-11-09 14:24:13
 * @Last Modified by:   yafee
-* @Last Modified time: 2016-11-14 10:46:13
+* @Last Modified time: 2016-11-17 11:34:20
 */
-*{
-	transform:translate3d(0);
+
+* {
+  transform: translate3d(0);
 }
+
 html,
 body,
 div,
@@ -29,8 +31,9 @@ img {
 }
 
 body {
-  font-family: 'PingFang SC','Helvetica Neue', Helvetica, Arial, sans-serif, 'Microsoft Yahei', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti, SimSun;
+  font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Microsoft Yahei', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti, SimSun;
 }
+
 
 /*第一屏*/
 
@@ -38,8 +41,11 @@ body {
   background-image: -moz-linear-gradient( 12deg, rgb(155, 121, 250) 0%, rgb(209, 109, 247) 100%);
   background-image: -webkit-linear-gradient( 12deg, rgb(155, 121, 250) 0%, rgb(209, 109, 247) 100%);
   background-image: -ms-linear-gradient( 12deg, rgb(155, 121, 250) 0%, rgb(209, 109, 247) 100%);
+  background-image: linear-gradient( 12deg, rgb(155, 121, 250) 0%, rgb(209, 109, 247) 100%);
+  ;
+  /*ie6,7,8,9,10*/
+  background: blueviolet\9;
 }
-
 .cloudBig {
   top: 14%;
   left: 6%;
@@ -111,6 +117,18 @@ body {
 .slideMore,
 .slideDown {
   display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .sectionOneTitle {
+    padding-top: 40%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .sectionOneTitle {
+    padding-top: 30%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -277,17 +295,19 @@ body {
   -o-filter: alpha(0);
   filter: alpha(0);
 }
-.sectionText{
-	-webkit-transform: translateX(-15rem);
-	-ms-transform: translateX(-15rem);
-	-o-transform: translateX(-15rem);
-	transform: translateX(-15rem);
+
+.sectionText {
+  -webkit-transform: translateX(-15rem);
+  -ms-transform: translateX(-15rem);
+  -o-transform: translateX(-15rem);
+  transform: translateX(-15rem);
 }
-.sectionImg{
-	-webkit-transform: translateX(15rem);
-	-ms-transform: translateX(15rem);
-	-o-transform: translateX(15rem);
-	transform: translateX(15rem);
+
+.sectionImg {
+  -webkit-transform: translateX(15rem);
+  -ms-transform: translateX(15rem);
+  -o-transform: translateX(15rem);
+  transform: translateX(15rem);
 }
 
 .sectionTitle {
@@ -302,7 +322,7 @@ body {
   color: #f5a253;
   display: inline-block;
   font-size: 4.3rem;
-  border:1px solid #f5a253;
+  border: 1px solid #f5a253;
   background: #fefefe;
   margin-right: .5rem;
   padding: 0 .5rem;
@@ -322,6 +342,7 @@ body {
   display: inline;
 }
 
+
 /*2,4,6屏公有*/
 
 .sectionTwo,
@@ -330,6 +351,15 @@ body {
   background: #fefefe;
   padding-left: 23%;
   padding-right: 17%;
+}
+
+@media screen and (min-width: 1440px) {
+  .sectionTwo,
+  .sectionFour,
+  .sectionSix {
+    padding-left: 27%;
+    padding-right: 20%;
+  }
 }
 
 
@@ -343,6 +373,14 @@ body {
   text-align: right;
 }
 
+@media screen and (min-width: 1440px) {
+  .sectionThree,
+  .sectionFive {
+    padding-left: 27%;
+    padding-right: 23%;
+  }
+}
+
 .sectionFourText {
   padding-top: 2rem;
 }
@@ -352,12 +390,29 @@ body {
   padding-top: 3rem;
 }
 
+@media screen and (min-width: 1440px) {
+  .sectionFourText {
+    padding-top: 4rem;
+  }
+  .sectionThreeText,
+  .sectionFiveText {
+    padding-top: 6rem;
+  }
+}
+
 
 /*2屏*/
 
 .sectionTwo {
   padding-left: 21%;
   padding-right: 13%;
+}
+
+@media screen and (min-width: 1440px) {
+  .sectionTwo {
+    padding-left: 25%;
+    padding-right: 17%;
+  }
 }
 
 
